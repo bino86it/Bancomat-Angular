@@ -1,0 +1,9 @@
+<h3>Prelievo</h3>
+<h4>Quanto vuoi prelevare?</h4>
+<label for="prelievo">importo da prelevare</label>
+<input [(ngModel)]="importo" id="prelievo" type="number">
+<button mat-flat-button [disabled]="!importoValido" (click)="effettuaPrelievo()" color="accent">Preleva</button>
+<p *ngIf="prelievoEffettuato">nuovo saldo disponibile {{nuovoSaldo}}</p>
+<p *ngIf="erroreImporto">
+    <span style="color: red;">{{ erroreImporto }}</span>
+</p>

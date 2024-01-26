@@ -1,0 +1,7 @@
+ul{display:flex;}
+li{
+    list-style: none;
+    cursor:pointer;
+    color:blue;
+    text-decoration: underline;
+    margin:1em;}

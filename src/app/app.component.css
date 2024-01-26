@@ -1,0 +1,11 @@
+ul{display: flex;}
+
+li{
+    list-style: none;
+    margin:1em;
+}
+
+.box{
+    width: 80%;
+    margin:0 auto;
+}

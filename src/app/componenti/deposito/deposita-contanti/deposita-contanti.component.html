@@ -1,0 +1,7 @@
+<h3>Deposita Contanti</h3>
+<h4>Quanto vuoi depositare?</h4>
+
+<label for="importo">deposita contante</label>
+<input [(ngModel)]="importo" id="importo" type="number">
+<button (click)="effettuaDeposito()" [disabled]="!importoValido" mat-flat-button color="accent">Deposita</button>
+<p *ngIf="depositoEffettuato">nuovo saldo disponibile {{nuovoSaldo}}</p>
